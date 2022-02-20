@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Design One | Bootstrap</title>
+
+    <!-- Moon icons -->
+    <link
+      rel="stylesheet"
+      href="moon-icons/icon-style.css"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-override.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- html5shiv for IE identifing simantic elements -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+      integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IE: fix Media Queries   -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+      integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- test bootstrap -->
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!--  toggle icon in small screens -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            >Fayy <span>TM</span></a
+          >
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#"
+                >Home
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Company</a></li>
+
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Website Hosting</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Architecture</a></li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Design</a>
+                </li>
+                <li>
+                  <a href="#">Photography</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- carousel -->
+    <div
+      id="myswipper"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li
+          data-target="#myswipper"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#myswipper" data-slide-to="1"></li>
+        <li data-target="#myswipper" data-slide-to="2"></li>
+        <li data-target="#myswipper" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img
+            src="https://wallpapercave.com/wp/wp7992445.jpg"
+            alt="..."
+          />
+          <div class="carousel-caption hidden-xs">
+            <h1>Web Development</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ad vitae voluptatibus aut
+              ullam error voluptatem accusamus odio nobis
+              ipsam, unde natus porro praesentium beatae?
+              Explicabo non deleniti eligendi quod
+              voluptatibus.
+            </p>
+            <div class="btn btn-primary">Read More</div>
+            <div class="btn btn-danger">Buy Now</div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="https://i.pinimg.com/originals/d5/e1/bf/d5e1bf9c7156e464f5e656b93cd5c632.jpg"
+            alt="..."
+          />
+          <div class="carousel-caption hidden-xs">
+            anime two
+          </div>
+        </div>
+
+        <div class="item">
+          <img
+            src="https://i0.wp.com/recommendmeanime.com/wp-content/uploads/2017/04/best-sites-to-find-free-anime-wallpapers.jpg?fit=816%2C459&ssl=1"
+            alt="..."
+          />
+          <div class="carousel-caption hidden-xs">
+            anime three
+          </div>
+        </div>
+
+        <div class="item">
+          <img
+            src="https://wallpaperfordesktop.com/wp-content/uploads/2021/05/Anime-Wallpaper-scaled.jpg"
+            alt="..."
+          />
+          <div class="carousel-caption hidden-xs">
+            anime four
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a
+        class="left carousel-control"
+        href="#myswipper"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#myswipper"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- About section -->
+    <section class="about text-center">
+      <div class="container">
+        <h1>Meet Our New Template <span>Fayy TM.</span></h1>
+        <p class="lead">
+          Hello Let Me Introduce Our Template Fayy TM.
+          Created With All The Love With
+          <strong>Bootstrap</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features text-center">
+      <div class="container">
+        <h1>Features</h1>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="feat">
+              <span class="glyphicon glyphicon-ok"></span>
+              <h4>100% responsive</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Culpa quidem nemo vitae
+                doloremque dolorum similique inventore
+                aliquid consequatur optio animi neque
+                maxime, porro deleniti in repellendus a sed,
+                delectus magni?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feat">
+              <span
+                class="glyphicon glyphicon-thumbs-up"
+              ></span>
+              <h4>Freelance</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Culpa quidem nemo vitae
+                doloremque dolorum similique inventore
+                aliquid consequatur optio animi neque
+                maxime, porro deleniti in repellendus a sed,
+                delectus magni?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feat">
+              <span
+                class="glyphicon glyphicon-eye-open"
+              ></span>
+              <h4>Awesome Display</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Culpa quidem nemo vitae
+                doloremque dolorum similique inventore
+                aliquid consequatur optio animi neque
+                maxime, porro deleniti in repellendus a sed,
+                delectus magni?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feat">
+              <span
+                class="glyphicon glyphicon-pencil"
+              ></span>
+              <h4>Well Docemented</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Culpa quidem nemo vitae
+                doloremque dolorum similique inventore
+                aliquid consequatur optio animi neque
+                maxime, porro deleniti in repellendus a sed,
+                delectus magni?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials text-center">
+      <div class="container">
+        <h1>What Our Customers Say About Us</h1>
+
+        <div
+          id="test-swapper"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Sunt unde quasi illum
+                itaque nam ad voluptatibus pariatur corporis
+                quidem debitis, enim nesciunt amet mollitia
+                perferendis. Dolores tenetur optio natus
+                quaerat?
+              </p>
+              <span>Mohammed Yosry</span>
+            </div>
+            <div class="item">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Sunt unde quasi illum
+                itaque nam ad voluptatibus pariatur corporis
+                quidem debitis, enim nesciunt amet mollitia
+                perferendis. Dolores tenetur optio natus
+                quaerat?
+              </p>
+              <span>Fayy</span>
+            </div>
+
+            <div class="item">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Sunt unde quasi illum
+                itaque nam ad voluptatibus pariatur corporis
+                quidem debitis, enim nesciunt amet mollitia
+                perferendis. Dolores tenetur optio natus
+                quaerat?
+              </p>
+              <span>Ciri</span>
+            </div>
+
+            <div class="item">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Sunt unde quasi illum
+                itaque nam ad voluptatibus pariatur corporis
+                quidem debitis, enim nesciunt amet mollitia
+                perferendis. Dolores tenetur optio natus
+                quaerat?
+              </p>
+              <span>Ninja</span>
+            </div>
+          </div>
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#test-swapper"
+              data-slide-to="0"
+              class="active"
+            >
+              <img
+                src="https://i.pinimg.com/originals/4f/34/c2/4f34c2555b66068a94a908c4df25b610.jpg"
+                alt="avatar one"
+              />
+            </li>
+            <li
+              data-target="#test-swapper"
+              data-slide-to="1"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7GHFch-T9Qg_oMVYu1FvV6OI5-O0gt9XtH6mLRqQQ2cD4tbQRhcTAaNOcdljK5p8OTGk&usqp=CAU"
+                alt="avatar two"
+              />
+            </li>
+            <li
+              data-target="#test-swapper"
+              data-slide-to="2"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqAF65b3i6mn_AGKKs_wzwYtCFRPyT2crhcBkmcDRR9pccyGXZjDoIBBwPsjHZUPw1YY&usqp=CAU"
+                alt="avatar three"
+              />
+            </li>
+            <li
+              data-target="#test-swapper"
+              data-slide-to="3"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNRzQrfM6dBnaycJfykwFAq7nHJj8yKYz6w&usqp=CAU"
+                alt="avatar four"
+              />
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section class="price_table text-center">
+      <div class="container">
+        <h1>Our Amazing Prices</h1>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="price_box">
+              <h2 class="text-primary">Hosting</h2>
+              <p class="center-block">$40</p>
+              <ul class="list-unstyled">
+                <li>Space: 30GB</li>
+                <li>Emails: 20</li>
+                <li>lps: 2 IP</li>
+                <li>Databases: 10</li>
+                <li>Ftp Accounts: 5k</li>
+              </ul>
+              <a href="#" class="btn btn-primary"
+                >Order Now</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="price_box">
+              <h2 class="text-success">VPS</h2>
+              <p class="center-block">$50</p>
+              <ul class="list-unstyled">
+                <li>Space: 50GB</li>
+                <li>Emails: 30</li>
+                <li>lps: 5 IP</li>
+                <li>Databases: 20</li>
+                <li>Ftp Accounts: 10k</li>
+              </ul>
+              <a href="#" class="btn btn-success"
+                >Order Now</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="price_box">
+              <h2 class="text-info">Dedicated</h2>
+              <p class="center-block">$80</p>
+              <ul class="list-unstyled">
+                <li>Space: 80GB</li>
+                <li>Emails: 40</li>
+                <li>lps: 10 IP</li>
+                <li>Databases: 30</li>
+                <li>Ftp Accounts: 20k</li>
+              </ul>
+              <a href="#" class="btn btn-info">Order Now</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="price_box">
+              <h2 class="text-danger">Cloud</h2>
+              <p class="center-block">$100</p>
+              <ul class="list-unstyled">
+                <li>Space: Unlimited</li>
+                <li>Emails: 50</li>
+                <li>lps: 12 IP</li>
+                <li>Databases: 50</li>
+                <li>Ftp Accounts: 50k</li>
+              </ul>
+              <a href="#" class="btn btn-danger"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="our_team text-center">
+      <div class="container">
+        <h1>Meet Our Awesome Team</h1>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="person">
+              <img
+                class="img-circle"
+                src="https://avatars.githubusercontent.com/u/92796091?v=4"
+                alt="Muhammed Yousry"
+              />
+              <h3>Muhammed Yousry</h3>
+              <p>
+                Ths is Muhammed Yousry The Founder And
+                Creator of Fayy Tech. Entrepreneur
+              </p>
+              <i class="icon-google"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="person">
+              <img
+                class="img-circle"
+                src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY2MzU3OTcxMTUwODQxNTM1/steve-jobs--david-paul-morrisbloomberg-via-getty-images.jpg"
+                alt="Steve Jobs"
+              />
+              <h3>Steve Jobs</h3>
+              <p>
+                Ths is Chris Coyier The Founder Of The
+                Amaring Websude Css-Tncks
+              </p>
+              <i class="icon-google"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="person">
+              <img
+                class="img-circle"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg"
+                alt="Brendan Eich"
+              />
+              <h3>Brendan Eich</h3>
+              <p>
+                Ths is Brendan Eich The Founder Of The
+                Amaring JavaScript Language
+              </p>
+              <i class="icon-google"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="person">
+              <img
+                class="img-circle"
+                src="https://static01.nyt.com/images/2021/06/25/opinion/25Khan2/25Khan2-superJumbo-v4.jpg"
+                alt="Imaran Khan"
+              />
+              <h3>Imaran Khan</h3>
+              <p>
+                Ths is Imaran Khan The Founder Of The
+                Amaring CSS
+              </p>
+              <i class="icon-google"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe text-center">
+      <div class="container">
+        <h1>Keep In Touch</h1>
+        <p class="lead">
+          Sign up for newsletter. Don't worry about spam, We
+          hate it too!
+        </p>
+
+        <form class="form-inline">
+          <input
+            type="text"
+            class="form-control input-lg"
+            placeholder="Write Your Email"
+          />
+          <button class="btn btn-danger btn-lg">
+            <i class="glyphicon glyphicon-edit"></i>
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats text-center">
+      <div class="container">
+        <h1>Our Statistics</h1>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="stat">
+              <i class="glyphicon glyphicon-user"></i>
+              <p>9.550</p>
+              <span>Satisfied Users</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat">
+              <i class="glyphicon glyphicon-comment"></i>
+              <p>25.600</p>
+              <span>Posted Comments</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat">
+              <i class="glyphicon glyphicon-briefcase"></i>
+              <p>1.540</p>
+              <span>Projects Done</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat">
+              <i class="glyphicon glyphicon-filter"></i>
+              <p>42.530</p>
+              <span>Tickets Archieved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="our-skills">
+      <div class="container">
+        <h1 class="text-center">Our Skills</h1>
+
+        <div class="row">
+          <div class="col-md-5">
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="92"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 92%"
+              >
+                HTML5/CSS3
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              >
+                JavaScript
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              >
+                Bootstrap
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-danger progress-bar-striped active"
+                role="progressbar"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 30%"
+              >
+                React
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-warning"
+                role="progressbar"
+                aria-valuenow="43"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 43%"
+              >
+                Wordpress
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-offset-1">
+            <div class="skills-info">
+              <h2>About The Team</h2>
+              <p class="lead">
+                We Are Specialised In Desiging And
+                Programming Team. We're Passionate About Web
+                Design And Creating Digital Ideas For Your
+                Dream Enterprice
+              </p>
+              <button type="button" class="btn btn-primary">
+                Talk With A Professional
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us text-center">
+      <div class="container">
+        <i class="glyphicon glyphicon-headphones"></i>
+        <h1>Tell Us What You Feel</h1>
+        <p class="lead">Feel Free To Contact Us Anytime</p>
+
+        <form role="form">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control input-lg"
+                placeholder="Username"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control input-lg"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control input-lg"
+                placeholder="Cell Phone"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <textarea
+                class="form-control input-lg"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg btn-block"
+            >
+              Contact Us
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Our Clients -->
+    <section class="our-clients">
+      <div class="container">
+        <div class="row">
+          <ul class="list-unstyled">
+            <li class="col-md-2 col-xs-4">
+              <img
+                class="img-responsive center-block"
+                src="http://assets.stickpng.com/images/5842ab62a6515b1e0ad75b09.png"
+                alt="BBC logo"
+              />
+            </li>
+
+            <li class="col-md-2 col-xs-4">
+              <img
+                class="img-responsive center-block"
+                src="http://assets.stickpng.com/images/5842ab75a6515b1e0ad75b0b.png"
+                alt="BBC logo"
+              />
+            </li>
+
+            <li class="col-md-2 col-xs-4">
+              <img
+                class="img-responsive center-block"
+                src="http://assets.stickpng.com/images/5847e9aacef1014c0b5e4828.png"
+                alt="BBC logo"
+              />
+            </li>
+
+            <li class="col-md-2 col-xs-4">
+              <img
+                class="img-responsive center-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Wired_logo.svg/1280px-Wired_logo.svg.png"
+                alt="BBC logo"
+              />
+            </li>
+
+            <li class="col-md-2 col-xs-4">
+              <img
+                class="img-responsive center-block"
+                src="https://www.pngkey.com/png/full/155-1550175_wall-street-journal-logo-png-wsj-logo-transparent.png"
+                alt="BBC logo"
+              />
+            </li>
+
+            <li class="col-md-2 col-xs-4">
+              <img
+                class="img-responsive center-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/TechRadar_logo.svg/1200px-TechRadar_logo.svg.png"
+                alt="BBC logo"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap.js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-override.js"></script>
+  </body>
+</html>
