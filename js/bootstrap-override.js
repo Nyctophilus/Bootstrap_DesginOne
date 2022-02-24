@@ -46,26 +46,28 @@ $(".color-option ul li").click(function () {
 });
 
 // loading screen
-window.onload = () => {
-  setTimeout(() => {
-    document.querySelector(
-      ".loading-overlay .lds-ripple"
-    ).style.opacity = 0;
-    document.body.style.overflow = `auto`;
 
-    setTimeout(() => {
-      document.querySelector(
-        ".loading-overlay"
-      ).style.opacity = 0;
+// window.onload = () => {
+//   setTimeout(() => {
+//     document.querySelector(
+//       ".loading-overlay .lds-ripple"
+//     ).style.opacity = 0;
+//     document.body.style.overflow = `auto`;
 
-      setTimeout(() => {
-        document.querySelector(".loading-overlay").remove();
-      }, 2000);
-    }, 1000);
-  }, 1000);
-};
+//     setTimeout(() => {
+//       document.querySelector(
+//         ".loading-overlay"
+//       ).style.opacity = 0;
+
+//       setTimeout(() => {
+//         document.querySelector(".loading-overlay").remove();
+//       }, 2000);
+//     }, 1000);
+//   }, 1000);
+// };
 
 // scroll-up btn
+
 let scrollBtn = $("#scroll-top");
 $(window).scroll(function () {
   if ($(this).scrollTop() > 700) {
